@@ -1,12 +1,23 @@
-graf = {
-    'Bekasi' : ('Karawang', 'Depok', 'Bogor'),
-    'Karawang' : ('Bekasi', 'Subang', 'Purwakarta', 'Cianjur'),
-    'Subang' : ('Karawang', 'Purwakarta', 'Indramayu', 'Sumedang', 'Bandung'),
-    'Indramayu' : ('Subang', 'Sumedang', 'Majalengka', 'Cirebon'),
-    'Cirebon' : ('Indramayu', 'Majalengka', 'Kuningan'),
-    'Kuningan' : ('Cirebon', 'Majalengka', 'Ciamis'),
-    'Ciamis' : ('Kuningan', 'Majalengka', 'Tasikmalaya'),
-    'Tasikmalaya' : ('Ciamis', 'Garut', 'Majalengka'),
-    'Garut' : ('Tasikmalaya', 'Sumedang', 'Bandung'),
-    'Bandung' : ('Purwakarta', 'Subang', "Sumedang", 'Garut'),
-}
+# class node
+class Peta:
+    # metode inisiasi (init)
+    def __init__(self):
+        self.daftarKota = {}
+        
+    # metode tambahKota untuk menambahkan kota
+    def tambahKota(self, kota):
+        if kota not in self.daftarKota:
+            self.daftarKota[kota] = {}
+    
+    # metode printKota untuk menampilkan kota
+    def printKota(self):
+        for kota in self.daftarKota:
+            print(f"{kota} -- {self.daftarKota[kota]}")
+    
+    # metode tambahJalan untuk menambahkan jarak antar kota
+    def tambahJalan(self, kota1, kota2, jarak):
+        # jika kota1 dan kota2 ada di daftarKota maka tambahkan jarak
+        if kota1 and kota2 in self.daftarKota:
+            self.daftarKota[kota1][kota2] = jarak
+            self.daftarKota[kota2][kota1] = jarak
+            

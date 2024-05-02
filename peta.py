@@ -49,10 +49,13 @@ class Peta:
         else:
             print("Kamu harus melewati kota lain untuk sampai ke kota tujuan")
 
-        # variabel untuk list nama kota di Filipina
+# variabel untuk list nama kota di Filipina
 PetaFilipina = ["General Santos", "Koronadal", "Digos", "Kidapawan", "Cotaboto", "Davao", "Samai", "Tagum", "Mati", "Valencia"]
 # variabel untuk memanggil class Peta
 Filipina = Peta()
+
+# aturan untuk input nama kota
+print("Masukkan nama kota sesuai dengan list dibawah ini:")
 # menambahkan kota dalam class
 for kota in PetaFilipina:
     Filipina.tambahKota(kota)

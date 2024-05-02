@@ -20,4 +20,11 @@ class Peta:
         if kota1 and kota2 in self.daftarKota:
             self.daftarKota[kota1][kota2] = jarak
             self.daftarKota[kota2][kota1] = jarak
-            
+
+    # metode hapusKota untuk menghapus kota
+    def hapusKota(self, kotaDihapus):
+        if kotaDihapus in self.daftarKota:
+            for kota in self.daftarKota:
+                if kotaDihapus in self.daftarKota[kota]:
+                    del self.daftarKota[kota][kotaDihapus]
+            del self.daftarKota[kotaDihapus]

@@ -34,3 +34,17 @@ class Peta:
         if kota1 and kota2 in self.daftarKota:
             del self.daftarKota[kota1][kota2]
             del self.daftarKota[kota2][kota1]
+
+        # metode ruteTempuh untuk menampilkan jarak tempuh
+    def ruteTempuh(self, kota1, kota2):
+        # jika kota1 dan kota2 ada di daftarKota maka tampilkan jarak
+        if kota1 and kota2 in self.daftarKota:
+            # jika kota1 dan kota2 tidak ada di daftarKota maka tampilkan pesan
+            if kota1 not in self.daftarKota [kota2] or kota2 not in self.daftarKota [kota1]:
+                print("Kota harus melewati kota lain untuk sampai ke kota tujuan")
+            else:
+                print(self.daftarKota[kota1][kota2])
+        
+        # jika user menempuh antar kota yang tidak sesuai dengan daftarKota
+        else:
+            print("Kamu harus melewati kota lain untuk sampai ke kota tujuan")

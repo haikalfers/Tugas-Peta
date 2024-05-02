@@ -28,3 +28,9 @@ class Peta:
                 if kotaDihapus in self.daftarKota[kota]:
                     del self.daftarKota[kota][kotaDihapus]
             del self.daftarKota[kotaDihapus]
+            
+    # metode hapusJalan untuk menghapus jarak antar kota
+    def hapusJalan(self, kota1, kota2):
+        if kota1 and kota2 in self.daftarKota:
+            del self.daftarKota[kota1][kota2]
+            del self.daftarKota[kota2][kota1]

@@ -48,3 +48,11 @@ class Peta:
         # jika user menempuh antar kota yang tidak sesuai dengan daftarKota
         else:
             print("Kamu harus melewati kota lain untuk sampai ke kota tujuan")
+
+        # variabel untuk list nama kota di Filipina
+PetaFilipina = ["General Santos", "Koronadal", "Digos", "Kidapawan", "Cotaboto", "Davao", "Samai", "Tagum", "Mati", "Valencia"]
+# variabel untuk memanggil class Peta
+Filipina = Peta()
+# menambahkan kota dalam class
+for kota in PetaFilipina:
+    Filipina.tambahKota(kota)

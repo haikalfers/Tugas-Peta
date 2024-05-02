@@ -76,3 +76,5 @@ Filipina.tambahJalan("Davao", "Samai", "Jarak: 19,3KM")
 Filipina.tambahJalan("Samai", "Tagum", "Jarak: 53,9KM")
 Filipina.tambahJalan("Tagum", "Mati", "Jarak: 111KM")
 Filipina.tambahJalan("Mati", "Valencia", "Jarak: 274KM")
+# memanggil metode printKota untuk menampilkan kota
+Filipina.printKota()

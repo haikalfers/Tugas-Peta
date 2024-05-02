@@ -59,6 +59,7 @@ print("Masukkan nama kota sesuai dengan list dibawah ini:")
 # menambahkan kota dalam class
 for kota in PetaFilipina:
     Filipina.tambahKota(kota)
+    
 # menambahakn jarak antar kota yang dilalui
 Filipina.tambahJalan("General Santos", "Koronadal", "Jarak: 58,5KM")
 Filipina.tambahJalan("General Santos", "Digos", "Jarak: 88,5KM")
@@ -76,5 +77,13 @@ Filipina.tambahJalan("Davao", "Samai", "Jarak: 19,3KM")
 Filipina.tambahJalan("Samai", "Tagum", "Jarak: 53,9KM")
 Filipina.tambahJalan("Tagum", "Mati", "Jarak: 111KM")
 Filipina.tambahJalan("Mati", "Valencia", "Jarak: 274KM")
+
 # memanggil metode printKota untuk menampilkan kota
 Filipina.printKota()
+
+# variabel untuk input nama kota
+lokasiAwal = input("Masukkan nama kota asal: ")
+# variabel untuk input nama kota tujuan
+lokasiTujuan = input("Masukkan nama kota tujuan: ")
+# menampilkan jarak tempuh
+Filipina.ruteTempuh(lokasiAwal, lokasiTujuan)

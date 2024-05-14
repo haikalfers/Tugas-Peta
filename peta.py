@@ -8,19 +8,25 @@
 """
 # class node
 class Peta:
-    # metode inisiasi (init)
+        # metode inisiasi (init)
     def __init__(self):
         self.daftarKota = {}
+        self.jumlahKota = 0
         
+    # metode menampilkan kota pada peta
+    def printKota(self):
+        for kota in self.daftarKota:
+            print(f"{kota}")
+            for kotaTetangga, jarak in self.daftarKota[kota].items():
+                print(f"\t--> {jarak} km -- {kotaTetangga}")
+                
+        print(f"Jumlah Kota : {self.jumlahKota}\n")
+
     # metode tambahKota untuk menambahkan kota
     def tambahKota(self, kota):
         if kota not in self.daftarKota:
             self.daftarKota[kota] = {}
-    
-    # metode printKota untuk menampilkan kota
-    def printKota(self):
-        for kota in self.daftarKota:
-            print(f"{kota} -- {self.daftarKota[kota]}")
+            self.jumlahKota += 1
     
     # metode tambahJalan untuk menambahkan jarak antar kota
     def tambahJalan(self, kota1, kota2, jarak):

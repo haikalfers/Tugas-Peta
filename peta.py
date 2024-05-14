@@ -101,5 +101,8 @@ print("___Menghitung Jarak___")
 lokasiAwal = input("Masukkan nama kota asal: ")
 # variabel untuk input nama kota tujuan
 lokasiTujuan = input("Masukkan nama kota tujuan: ")
+
 # menampilkan jarak tempuh
 Filipina.ruteTempuh(lokasiAwal, lokasiTujuan)
+# menjalankan algoritma dijkstra
+Filipina.dijkstra(lokasiAwal, lokasiTujuan)

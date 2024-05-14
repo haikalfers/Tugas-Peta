@@ -87,8 +87,15 @@ Filipina.tambahJalan("Davao", "Valencia", 163)
 Filipina.tambahJalan("Samal", "Tagum", 53.9)
 Filipina.tambahJalan("Tagum", "Mati", 111)
 Filipina.tambahJalan("Tagum", "Valencia", 274)
+
+# aturan untuk input nama kota
+print("Masukkan nama kota sesuai dengan list dibawah ini:")
 # memanggil metode printKota untuk menampilkan kota
+print("___PETA FILIPINA___\n")
 Filipina.printKota()
+
+#menghitung jarak kota asal ke kota tujuan
+print("___Menghitung Jarak___")
 
 # variabel untuk input nama kota
 lokasiAwal = input("Masukkan nama kota asal: ")

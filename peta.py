@@ -68,8 +68,6 @@ PetaFilipina = ["General Santos", "Koronadal", "Digos", "Kidapawan", "Cotaboto",
 # variabel untuk memanggil class Peta
 Filipina = Peta()
 
-# aturan untuk input nama kota
-print("Masukkan nama kota sesuai dengan list dibawah ini:")
 # menambahkan kota dalam class
 for kota in PetaFilipina:
     Filipina.tambahKota(kota)

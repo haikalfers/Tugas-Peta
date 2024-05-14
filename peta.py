@@ -1,3 +1,11 @@
+"""
+    Kelompok 7_2023E - Tugas Graph Struktur Data
+
+    1. Daniel Satria P.R.B - 23091397143 (Ketua)
+    2. Ahmad Afredo F.A - 23091397150 (Reviewer)
+    3. Alya Faadhilah P - 23091397153 (Notulis)
+    4. Haikal Ferdian S - 23091397154 (Code Editor)
+"""
 # class node
 class Peta:
     # metode inisiasi (init)
